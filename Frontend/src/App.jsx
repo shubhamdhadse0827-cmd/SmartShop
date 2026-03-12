@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ShopContextProvider>
-      <BrowserRouter>
+      <HashRouter>
 
         <Navbar />
 
@@ -44,7 +44,7 @@ function App() {
 
         <Footer />
 
-      </BrowserRouter>
+      </HashRouter>
     </ShopContextProvider>
   );
 }

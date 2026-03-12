@@ -106,7 +106,6 @@ const ShopCategory = (props) => {
         ))}
       </div>
 
-      {/* LOAD MORE */}
       {visible < categoryProducts.length && (
         <div
           className="shopCategory-load"
