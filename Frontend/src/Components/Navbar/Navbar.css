@@ -1,0 +1,155 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background: linear-gradient(180deg,#ddf7ea,#ffffff 60%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO */
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p{
+    color: #171717;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;    
+}
+
+.nav-searchbar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    background: white;
+}
+
+.nav-searchbar input{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.nav-searchbar button{
+    border: none;
+    padding: 8px 15px;
+    background: #ff4141;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-searchbar button:hover{
+    background:#e63636;
+}
+
+/* MENU */
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-menu li{
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover{
+    color: #ff4141;
+}
+
+/* ACTIVE LINE */
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff4141;
+}
+
+/* LOGIN + CART */
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* CART ICON WRAPPER */
+
+.cart-icon{
+    position: relative;
+}
+
+/* LOGIN BUTTON */
+
+.nav-login-cart button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-login-cart button:hover{
+    background: #e63636;
+}
+
+/* CART ICON */
+
+.cart-icon img{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-icon img:hover{
+    transform: scale(1.1);
+}
+
+/* CART COUNT BADGE */
+
+.nav-cart-count{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+    background: #ff4141;
+    color: white;
+    font-weight: 600;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

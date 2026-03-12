@@ -1,0 +1,143 @@
+.cartitems{
+    margin: 80px 120px;
+}
+
+.cartitems hr{
+    height: 2px;
+    background: #e2e2e2;
+    border: none;
+}
+
+/* Header Row */
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Product Row */
+.cartitems-format{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Product Image */
+.carticon-product-icon{
+    height: 60px;
+}
+
+/* Remove Icon */
+.cartitem-remove-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cartitem-remove-icon:hover{
+    transform: scale(1.2);
+}
+
+/* Quantity Button */
+.cartitems-quantity{
+    width: 70px;
+    height: 40px;
+    border: 2px solid #ddd;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Bottom Section */
+.cartitems-down{
+    display: flex;
+    margin: 80px 0px;
+    gap: 80px;
+}
+
+/* Cart Total Section */
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cartitems-total h1{
+    font-size: 24px;
+}
+
+/* Total Items */
+.cartitems-total-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    font-size: 17px;
+}
+
+/* Checkout Button */
+.cartitems-total button{
+    width: 260px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff4141;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cartitems-total button:hover{
+    background: #e63535;
+}
+
+/* Promo Code Section */
+.cartitems-promocode{
+    flex: 1;
+    font-size: 16px;
+}
+
+.cartitems-promocode p{
+    color: #555;
+}
+
+/* Promo Box */
+.cartitems-promobox{
+    display: flex;
+    margin-top: 15px;
+    width: 400px;
+    height: 50px;
+    background: #f3f3f3;
+}
+
+/* Input */
+.cartitems-promobox input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+/* Button */
+.cartitems-promobox button{
+    width: 140px;
+    border: none;
+    background: #ff4141;
+    color: white;
+    font-size: 16px;
+    font-size: 500;
+    cursor: pointer;
+}
+
+.cartitems-promobox button:hover{
+    background: #e63535;   
+}
