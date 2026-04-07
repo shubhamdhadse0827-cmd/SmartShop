@@ -10,6 +10,9 @@ import men_banner from "./assets/men_banner.mp4";
 import women_banner from "./assets/women_banner.mp4";
 import kids_banner from "./assets/kids_banner.mp4";
 import ShopContextProvider from "./Context/ShopContext";
+import ExploreCollections from "./Components/ExploreCollections/ExploreCollections";
+import OffersPage from "./Components/OffersPage/OffersPage";
+import MyOrders from "./Components/MyOrders/MyOrders";
 
 function App() {
 
@@ -36,9 +39,15 @@ function App() {
 
           <Route path="/product/:productID" element={<Product />} />
 
+          <Route path="/explore" element={<ExploreCollections />} />
+
+          <Route path="/orders" element={<MyOrders />} />
+
           <Route path="/cart" element={<Cart />} />
 
           <Route path="/loginSignup" element={<LoginSignup />} />
+
+          <Route path="/offers" element={<OffersPage />} />
 
         </Routes>
 

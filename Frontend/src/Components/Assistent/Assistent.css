@@ -1,0 +1,113 @@
+/* Assistant container */
+
+.assistant{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+/* Chat Button */
+
+.chat-button{
+    width: 65px;
+    height: 65px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.chat-button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* FontAwesome icon size */
+
+.chat-button svg{
+    font-size: 28px;
+    color: #ff4141;
+}
+
+/* Chat Popup */
+
+.chat-box{
+    position: absolute;
+    bottom: 85px;
+    right: 0;
+    width: 300px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    animation: popup 0.3s ease;
+}
+
+/* Popup animation */
+
+@keyframes popup{
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Header */
+
+.chat-header{
+    background: #ff4141;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Chat body */
+
+.chat-body{
+    padding: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+.chat-body p{
+    margin: 8px 0;
+}
+
+/* Input area */
+
+.chat-input{
+    display: flex;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input{
+    flex: 1;
+    border: none;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button{
+    background: #ff4141;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.chat-input button:hover{
+    background: #e63a3a;
+}

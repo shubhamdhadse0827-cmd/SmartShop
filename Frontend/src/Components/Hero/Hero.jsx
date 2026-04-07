@@ -3,8 +3,10 @@ import "./Hero.css";
 import hand_icon from "../../assets/hand_icon.png";
 import arrow_icon from "../../assets/arrow_icon.png";
 import men from "../../assets/men.png";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero">
 
@@ -20,8 +22,8 @@ const Hero = () => {
         <h1>Collections</h1>
         <h1>For Everyone</h1>
 
-        <div className="hero-latest-btn">
-          <span>Latest Collections</span>
+        <div className="hero-latest-btn" onClick={() => navigate("/explore")}>
+          <span>Explore Collections</span>
           <img src={arrow_icon} alt="" height="55px"/>
         </div>
 

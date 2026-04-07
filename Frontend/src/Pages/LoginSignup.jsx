@@ -4,6 +4,18 @@ import "./LoginSignup.css";
 const LoginSignup = ({ close }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
+  const [role, setRole] = useState("USER"); // default USER
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      role: role
+      // name, email, password yaha add karna hai later
+    };
+
+    console.log(data);
+  };
 
   return (
     <div className="login-overlay">
@@ -14,18 +26,51 @@ const LoginSignup = ({ close }) => {
           {isLogin ? "Welcome Back to Website" : "Create Your Account On Website"}
         </h2>
 
-        <form>
+        {/* 🔘 Role Selection */}
+        <div className="role-selection">
+          <label>
+            <input
+              type="radio"
+              name="role"
+              value="USER"
+              checked={role === "USER"}
+              onChange={(e) => setRole(e.target.value)}
+            />
+            User
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="role"
+              value="ADMIN"
+              checked={role === "ADMIN"}
+              onChange={(e) => setRole(e.target.value)}
+            />
+            Admin
+          </label>
+        </div>
+
+        <form onSubmit={handleSubmit}>
           {!isLogin && (
             <input type="text" placeholder="Name" required autoComplete="name" />
           )}
 
           <input type="email" placeholder="Email ID" required autoComplete="email" />
 
-          <input type={showPassword ? "text" : "password"} placeholder="Password" required autoComplete="current-password"/>
+          <input
+            type={showPassword ? "text" : "password"}
+            placeholder="Password"
+            required
+            autoComplete="current-password"
+          />
 
           <div className="password-toggle">
             <label>
-              <input type="checkbox" onChange={() => setShowPassword(!showPassword)} />
+              <input
+                type="checkbox"
+                onChange={() => setShowPassword(!showPassword)}
+              />
               Show Password
             </label>
           </div>
