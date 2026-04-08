@@ -1,5 +1,6 @@
 .item{
-    width: 200px;
+    width: 100%;   
+    max-width: 220px; 
     padding: 15px;
     border-radius: 10px;
     background: white;
@@ -63,5 +64,42 @@
 
 .add-cart-btn:active{
   transform: scale(0.92);
+}
+
+@media (max-width:768px){
+
+ .item{
+    width: 100%;
+    max-width: 160px;   
+    padding: 8px;
+    gap: 4px;
+  }
+
+  .item img{
+  width: 100%;
+  height: 140px;
+  object-fit: contain;   
+}
+
+  .item p{
+    margin: 4px 0;   
+    font-size: 12px;
+  }
+
+ .item-prices{
+    gap: 10px;   
+  }
+
+  .item-price-new,
+  .item-price-old{
+    font-size: 8px;
+  }
+
+  .item button{
+    padding: 5px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+
 }
 

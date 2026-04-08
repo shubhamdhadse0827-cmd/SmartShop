@@ -14,6 +14,7 @@ const Navbar = ({search, setSearch}) => {
     const [menu, setMenu] = useState("home");
     const [showLogin, setShowLogin] = useState(false);
     const {getTotalCartItems} = useContext(ShopContext);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [openProfile,setOpenProfile] = useState(false);
 
     return (
@@ -23,6 +24,10 @@ const Navbar = ({search, setSearch}) => {
             <div className="nav-logo">
                 <img src={logo} alt="" height="50px"/>
                 <p>SmartShop</p>
+            </div>
+
+            <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+                ☰
             </div>
 
             <div className="nav-searchbar">
@@ -37,23 +42,27 @@ const Navbar = ({search, setSearch}) => {
                 </button>
             </div>
 
-            <ul className="nav-menu">
-                <li onClick={()=>setMenu("home")}>
+             <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
+                 <div className="close-btn" onClick={()=>setMenuOpen(false)}>
+                    ✖
+                </div>
+
+                <li onClick={()=>{ setMenu("home"); setMenuOpen(false);}}>
                     <Link style={{textDecoration:"none", color:"#626262"}} to="/">Home</Link>
                     {menu==="home"?<hr/>:null}
                 </li>
 
-                <li onClick={()=>setMenu("mens")}>
+                 <li onClick={()=>{ setMenu("mens"); setMenuOpen(false);}}>
                     <Link style={{textDecoration:"none", color:"#626262"}} to="/mens">Men</Link>
                     {menu==="mens"?<hr/>:null}
                 </li>
 
-                <li onClick={()=>setMenu("womens")}>
+                 <li onClick={()=>{ setMenu("womens"); setMenuOpen(false);}}>
                     <Link style={{textDecoration:"none", color:"#626262"}} to="/womens">Women</Link>
                     {menu==="womens"?<hr/>:null}
                 </li>
 
-                <li onClick={()=>setMenu("kids")}>
+                 <li onClick={()=>{ setMenu("kids"); setMenuOpen(false);}}>
                     <Link style={{textDecoration:"none", color:"#626262"}} to="/kids">Kids</Link>
                     {menu==="kids"?<hr/>:null}
                 </li>

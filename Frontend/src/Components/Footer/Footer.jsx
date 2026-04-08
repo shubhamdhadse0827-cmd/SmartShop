@@ -9,17 +9,13 @@ const Footer = () => {
     <div className="footer">
 
       <div className="footer-top">
-
-        {/* LOGO COLUMN */}
         <div className="footer-logo">
           <img src={logo} alt="" height="40px"/>
           <h2>SmartShop</h2>
           <p>Your one stop fashion destination</p>
         </div>
 
-        {/* LINKS COLUMN */}
         <div className="footer-links">
-
           <div>
             <h4>Company</h4>
             <p>About Us</p>
