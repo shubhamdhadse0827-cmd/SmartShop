@@ -14,4 +14,4 @@ const NewsLatter = () => {
   )
 }
 
-export default NewsLatter
+export default NewsLatter;
