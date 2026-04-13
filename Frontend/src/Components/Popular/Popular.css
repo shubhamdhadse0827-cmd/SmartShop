@@ -32,8 +32,10 @@
 
 .popular{
     padding: 20px 10px;   
-    margin-bottom: 30px;
+    margin-bottom: 10px;   /* 🔥 kam kar diya */
+    min-height: auto;      /* 🔥 extra vertical space hata diya */
   }
+
 
   .popular h1{
     font-size: 22px;
