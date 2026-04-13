@@ -25,7 +25,6 @@
     font-size: 18px;
 }
 
-/* Subscribe Box */
 .subscribe-box {
     display: flex;
     width: 100%;
@@ -34,10 +33,9 @@
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border: 1 solid #e3e3e3;
+    border: 1px solid #e3e3e3;
 }
 
-/* Input */
 .subscribe-box input {
     flex: 1;
     padding: 15px 20px;
@@ -47,7 +45,6 @@
     margin-left: 30px;
 }
 
-/* Button */
 .subscribe-btn {
     padding: 0 25px;
     background-color: #ff4141;
@@ -59,7 +56,6 @@
     margin-top: 0px;
 }
 
-/* Hover + Active */
 .subscribe-btn:hover {
     background-color: #e63939;
 }
@@ -68,25 +64,41 @@
     transform: scale(0.95);
 }
 
-/* Message */
 .message {
     font-size: 14px;
     font-weight: 500;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+
     .newsLatter h1 {
         font-size: 24px;
     }
 
-    .subscribe-box {
+
+  .subscribe-box {
         flex-direction: column;
-        border-radius: 15px;
+        background: transparent;
+        box-shadow: none;
+        gap: 12px;
+        border: none;
+        border-radius: 0;     
+        overflow: visible;   
+    }
+
+    .subscribe-box input {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 30px;
+        border: 1px solid #e3e3e3;
+        background: white;
+        padding: 15px;
     }
 
     .subscribe-btn {
         width: 100%;
-        padding: 12px;
+        border-radius: 30px;  /* ✅ button ka apna radius */
+        padding: 15px;
     }
 }
