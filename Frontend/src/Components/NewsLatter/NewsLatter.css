@@ -72,6 +72,12 @@
 
 @media (max-width: 768px) {
 
+     .newsLatter {
+        width: 100%;          
+        border-radius: 0;     
+        padding: 30px 15px;   
+    }
+
     .newsLatter h1 {
         font-size: 24px;
     }
