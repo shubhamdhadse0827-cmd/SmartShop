@@ -30,12 +30,10 @@
 
 @media (max-width:768px){
 
-.popular{
-    padding: 20px 10px;   
-    margin-bottom: 10px;   /* 🔥 kam kar diya */
-    min-height: auto;      /* 🔥 extra vertical space hata diya */
+  .popular{
+    padding: 20px 6px;
+    min-height: auto;
   }
-
 
   .popular h1{
     font-size: 22px;
@@ -43,14 +41,14 @@
   }
 
   .popular hr{
-    width: 150px;
+    width: 120px;
     height: 4px;
   }
 
- .popular-item{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;  /* 🔥 force */
-    gap: 12px;
-    justify-content: center;
+  .popular-item{
+    grid-template-columns: repeat(4, 1fr); /* 🔥 4 cards */
+    gap: 6px;   /* 🔥 tight gap */
+    margin-top: 20px;
   }
+
 }

@@ -25,3 +25,14 @@
   margin-top: 50px;
   gap: 30px;
 }
+
+@media (max-width:768px){
+
+  .collection{
+    grid-template-columns: repeat(4, 1fr); /* 🔥 4 cards */
+    gap: 6px;   /* 🔥 gap kam */
+    margin-top: 20px;
+    padding: 0 6px;
+  }
+
+}
