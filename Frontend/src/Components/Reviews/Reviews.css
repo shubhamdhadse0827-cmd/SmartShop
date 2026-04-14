@@ -59,7 +59,9 @@
 @media (max-width:768px){
 
   .reviews-section{
-    width: 95%;
+    width: 100%;          /* 🔥 full width */
+    margin: 0;            /* 🔥 side gap hatao */
+    border-radius: 0; 
     padding: 20px 10px;
   }
 
